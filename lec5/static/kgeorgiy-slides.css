@@ -1,0 +1,329 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: black;
+    font-size: 5.6vh;
+}
+@media only screen and (max-aspect-ratio: 4/3) {
+    body {
+        font-size: 4.2vw;
+    }
+}
+
+div.slide > h1, div.slide > h2, div.slide > h3 {
+    display: block;
+    padding: 0.2ex 0.4em;
+    margin: 0;
+    color: #ffcc4c;
+    font-size: 120%;
+    line-height: 1.2;
+    min-height: 8%;
+}
+
+div.slide {
+    margin: auto;
+    padding: 0;
+    background-color: #1946ba;
+    font-size: 100% !important;
+    width: 100vw; 
+    height: 75vw;
+    max-height: 100vh;
+    max-width: 133vh;
+    overflow: hidden;
+    position: absolute;
+    left:0;right:0; /* horizontal center */
+}
+
+div.slide.section > h1, div.slide.subsection > h1 {
+    display: none;
+}
+/* Title slide */
+div.slide.cover * {
+    text-align: center;
+}
+
+div.course, div.lecture {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+div.course {
+    color: white;
+    margin-top: 7ex;
+}
+
+div.lecture {
+    color: #ffcc4c;
+    height: 9ex;
+}
+
+div.link {
+    color: white;
+    padding-bottom: 1ex;
+}
+
+hr {
+    width: 20em;
+    height: 0;
+    border-style: none;
+    border-top: solid 1px white;
+}
+
+/* Section slide. */
+.section li a, .subsection li a {
+    color: #d3d3d3;
+    text-decoration: none;
+}
+
+.section li a.current, .subsection li a.current {
+    color: black;
+}
+
+/* Lists */
+.level-1 > li, .level-2 > li, .level-3 > li {
+    font-style: normal;
+}
+
+.level-1 > li {
+    font-size: 100%
+}
+
+.level-2 > li {
+    font-size: 85%
+}
+
+.level-3 > li {
+    font-size: 85%
+}
+
+ul.level-1, ul.level-2, ul.level-3 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul.level-1 > li, ul.level-2 > li, ul.level-3 > li {
+    list-style-type: none;
+    margin: 0;
+}
+ul.level-1 > li {
+    background: url("bullet-1.png") no-repeat 0 0.85ex;
+    background-image: url("bullet-1.svg"), none;
+    background-size: 1ex 1ex;
+    padding-left: 1.5ex;
+}
+ul.level-2 > li {
+    background: url("bullet-2.png") no-repeat 0 0.85ex;
+    background-image: url("bullet-2.svg"), none;
+    background-size: 1ex 1ex;
+    padding-left: 1.6ex;
+}
+ul.level-3 > li {
+    background: url("bullet-3.png") no-repeat 0 0.80ex;
+    background-image: url("bullet-3.svg"), none;
+    background-size: 1.1ex 1.1ex;
+    padding-left: 1.7ex;
+}
+ol.level-1 {
+    margin: 0;
+    padding: 0;
+}
+
+ol.level-1 > li {
+    margin: 0 0 0 1.5em;
+    padding: 0;
+}
+
+ol.toc-1, ol.toc-2 {
+    margin: 0;
+    padding: 0;
+}
+
+ol.toc-1 > li, ol.toc-2 > li {
+    list-style-type: none !important;
+    padding: 0;
+    margin: 0 0 0 1em;
+}
+
+pre {
+    margin: 0 0 0.2ex 0;
+    padding-left: 0.5ex !important;
+    border-style: none !important;
+    border-left: solid 0.2ex #1946ba !important;
+}
+pre.fixed {
+    font-family: monospace;
+}
+.body {
+    background: white;
+    padding: 0.5ex 0.5em;
+    height: 85%;
+    overflow: hidden;
+}
+.footer {
+    color: white;
+    font-size: 55%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    overflow: hidden;
+    background-color: #1946ba;
+    line-height: 150%;
+}
+.footer span {
+    display: inline-block;
+}
+span.author {
+    float: left;
+    padding-left: 0.5em;
+    text-align: left;
+    width: 20%;
+}
+span.title {
+    width: 57%;
+    max-width: 55%;    
+    overflow: hidden;
+}
+span.number {
+    float: right;
+    text-align: right;
+    padding-right: 0.5em;
+    width: 20%;
+}
+
+table {
+    border-collapse: collapse;
+    line-height: 110%;
+}
+td, th {
+    border: solid 1px black;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+table.left {
+    margin-right: auto;
+    text-align: initial;
+}
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: initial;
+}
+table.right {
+    margin-left: auto;
+    text-align: initial;
+}
+
+table.centered {
+    text-align: center;
+}
+
+/* Table of contents */
+div.slidy_toc li {
+    padding-left: 2em;
+}
+div.slidy_toc li.section {
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 0;
+}
+div.slidy_toc li.subsection {
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+/** Other styles */
+var {
+    color: #1946ba;
+    font-style: normal;
+}
+
+var a:visited, var a:link {
+    color: #1946ba;
+    text-decoration: none;
+    border-bottom:1px dotted;
+}
+
+pre, .level-3 pre {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 100%
+}
+
+
+.questions {
+    padding-top: 0.5em;
+    font-size: 1000%;
+    text-align: center;
+}
+
+span.question {
+    color: green;
+}
+
+a {
+    text-decoration: underline;
+    color: #0000aa
+}
+
+div.link > a {
+    color: white;
+}
+
+.warn {
+    color: #ec0b43;
+}
+
+.warn pre {
+    background-color: #ffc0c0;
+}
+
+/** Tooltip */
+div.copyright a span {
+    display: none;
+}
+
+img { margin: 0.3em; }
+
+img.bottom {
+    width: 100%;
+}
+
+img.width {
+    width: 100%
+}
+
+div.img-width {
+    text-align: center;
+}
+
+div.img-height {
+    text-align: center;
+    height: 100%;
+}
+
+.mathO {
+    font-size: 80%
+}
+
+.only.invisible {
+    display: none;
+}
+
+.small {
+    font-size: 80%
+}
+
+.large {
+    font-size: 120%
+}
+
